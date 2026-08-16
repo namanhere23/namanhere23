@@ -20,7 +20,6 @@ jobs:
     timeout-minutes: 15
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -35,13 +34,6 @@ jobs:
           card: stats
           options: username=${{ github.repository_owner }}&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false
           path: dist/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate GitHub Trophy
-        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
-        with:
-          username: ${{ github.repository_owner }}
-          output_path: dist/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate Pacman Contribution Graph
