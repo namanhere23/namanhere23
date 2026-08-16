@@ -1,6 +1,10 @@
 name: Update GitHub Profile
 
 on:
+  push:
+    branches:
+      - main
+
   schedule:
     - cron: "0 */12 * * *"
 
@@ -43,14 +47,14 @@ jobs:
           cp dist/pacman-contribution-graph.svg profile/pacman-contribution-graph.svg
           cp dist/pacman-contribution-graph-dark.svg profile/pacman-contribution-graph-dark.svg
 
-      - name: Download GitHub Trophy
+      - name: Download Trophy
         run: |
           curl -fL "https://github-profile-trophy.vercel.app/?username=namanhere23&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" \
-            -o profile/trophy.svg
+          -o profile/trophy.svg
 
-      - name: Verify generated files
+      - name: Verify files
         run: |
-          echo "Profile files:"
+          echo "Generated profile files:"
           ls -lh profile/
 
           test -s profile/stats.svg
@@ -58,7 +62,7 @@ jobs:
           test -s profile/pacman-contribution-graph.svg
           test -s profile/pacman-contribution-graph-dark.svg
 
-      - name: Commit and push generated files
+      - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
