@@ -1,4 +1,9 @@
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&height=100&section=header&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=cobalt"/>
+</div>
+
 <br clear="both">
+
 <h1 align="center">Naman Gulati</h1>
 
 <h3 align="center">🛠️ Skills & Tools</h3>
@@ -23,9 +28,15 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="60" alt="git logo"  />
 </div>
 
+<br>
+<br>
+
 <div data-importer="stats" align="center">
   <img src="https://streak-stats.demolab.com?user=namanhere23&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
 </div>
+
+<br>
+<br>
 
 [![An image of @namanhere23's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/namanhere23)](https://holopin.io/@namanhere23)
 
