@@ -31,11 +31,6 @@
 ###
 
 <div align="center">
-</div>
-
-###
-
-<div align="center">
 
   <img src="./profile/stats.svg" height="150" alt="stats graph" />
 
